@@ -10,6 +10,12 @@ class HomeScreen extends StatelessWidget {
         title: CircleAvatar(
           child: Icon(Icons.person),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.add),
+          ),
+        ],
       ),
       body: Center(
         child: Text('Home Screen'),
