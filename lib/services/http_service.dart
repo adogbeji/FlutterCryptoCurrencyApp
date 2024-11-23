@@ -16,4 +16,6 @@ class HTTPService {
       },
     );
   }
+
+  Future<dynamic> get(String path) {}
 }
