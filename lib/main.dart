@@ -1,11 +1,14 @@
+// import 'package:crypto_currency_app/utils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
-import 'package:crypto_currency_app/views/screens/home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
+import 'package:crypto_currency_app/views/screens/home_screen.dart';
+import 'package:crypto_currency_app/utils.dart';
+
+Future<void> main() async {
+  await registerServices();
   runApp(const MyApp());
 }
 
