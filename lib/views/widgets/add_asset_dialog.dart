@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class AddAssetDialogController extends GetxController {}
 
 class AddAssetDialog extends StatelessWidget {
   const AddAssetDialog({super.key});
