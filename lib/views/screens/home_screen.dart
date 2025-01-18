@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Get.dialog(const AddAssetDialog());
+              Get.dialog(AddAssetDialog());
             },
             icon: const Icon(Icons.add),
           ),

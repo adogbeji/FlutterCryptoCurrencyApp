@@ -6,7 +6,9 @@ class AddAssetDialogController extends GetxController {
 }
 
 class AddAssetDialog extends StatelessWidget {
-  const AddAssetDialog({super.key});
+  AddAssetDialog({super.key});
+
+  final controller = Get.put(AddAssetDialog());
 
   @override
   Widget build(BuildContext context) {
