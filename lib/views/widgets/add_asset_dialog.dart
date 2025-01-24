@@ -13,7 +13,7 @@ class AddAssetDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(
-      child: Center(
+      () => Center(
         child: Container(
           width: MediaQuery.sizeOf(context).width * 0.80,
           height: MediaQuery.sizeOf(context).height * 0.40,
