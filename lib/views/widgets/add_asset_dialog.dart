@@ -21,7 +21,13 @@ class AddAssetDialog extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             color: Colors.white,
           ),
-          child: Column(
+          child: controller.loading.isTrue ? Center(
+            child: SizedBox(
+              width: 30,
+              height: 30,
+              child: CircularProgressIndicator(),
+            ),
+          ): Column(
             children: [],
           ),
         ),
