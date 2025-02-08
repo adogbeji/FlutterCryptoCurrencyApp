@@ -3,6 +3,12 @@ import 'package:get/get.dart';
 
 class AddAssetDialogController extends GetxController {
   RxBool loading = false.obs;
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+  }
 }
 
 class AddAssetDialog extends StatelessWidget {
