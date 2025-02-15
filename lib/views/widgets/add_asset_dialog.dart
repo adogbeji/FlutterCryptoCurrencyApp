@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AddAssetDialogController extends GetxController {
-  RxBool loading = false.obs;
+  RxBool loading = true.obs;
 
   @override
   void onInit() {
     // TODO: implement onInit
     super.onInit();
+    Future.delayed(Durations.extralong4).then((value) {
+      loading.value = false;
+    });
   }
 }
 
