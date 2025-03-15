@@ -1,3 +1,4 @@
+import 'package:crypto_currency_app/services/http_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +16,10 @@ class AddAssetDialogController extends GetxController {
     _getAssets();
   }
 
-  Future<void> _getAssets() async {}
+  Future<void> _getAssets() async {
+    loading.value = true;
+    HTTPService httpService = Get.find();
+  }
 }
 
 class AddAssetDialog extends StatelessWidget {
