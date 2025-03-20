@@ -18,7 +18,10 @@ class AddAssetDialogController extends GetxController {
 
   Future<void> _getAssets() async {
     loading.value = true;
-    HTTPService httpService = Get.find();
+    HTTPService httpService = Get.find<HTTPService>();
+    var responseData = await httpService.get('currencies');
+    print(responseData);
+    loading.value = false;
   }
 }
 
