@@ -1,9 +1,11 @@
+import 'package:crypto_currency_app/models/api_response.dart';
 import 'package:crypto_currency_app/services/http_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AddAssetDialogController extends GetxController {
   RxBool loading = false.obs;
+  RxList<String> assets = <String>[].obs;
 
   @override
   void onInit() {
@@ -20,7 +22,7 @@ class AddAssetDialogController extends GetxController {
     loading.value = true;
     HTTPService httpService = Get.find<HTTPService>();
     var responseData = await httpService.get('currencies');
-    print(responseData);
+    CurrenciesListAPIResponse currenciesListAPIResponse = CurrenciesListAPIResponse.fromJson(responseData);
     loading.value = false;
   }
 }
